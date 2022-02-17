@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { getData, updateDBData, resetDBData, exportDBData, importDBData } from "./services/dbServices";
 import { saveAs } from "file-saver";
 import Spinner from "react-bootstrap/Spinner";
+import '../node_modules/font-awesome/css/font-awesome.min.css'; 
 import TopicCard from "./components/TopicCard/TopicCard";
 import Topic from "./components/Topic/Topic";
 import About from "./components/About/About";

@@ -217,6 +217,10 @@ input.search-input-container::placeholder {
 	margin-bottom: 0px !important;
 }
 
+.setTable{
+	padding-bottom: 4rem;
+}
+
 @media screen and (max-width: 1199px) {
 	.topic-input-container {
 		max-width: var(--table-lg-width);

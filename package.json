@@ -12,6 +12,7 @@
 		"@testing-library/user-event": "^7.2.1",
 		"bootstrap": "^4.5.3",
 		"file-saver": "^2.0.5",
+		"font-awesome": "^4.7.0",
 		"jquery": "^3.6.0",
 		"localbase": "^0.7.4",
 		"react": "^16.14.0",

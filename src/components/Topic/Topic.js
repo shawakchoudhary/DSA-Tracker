@@ -344,9 +344,9 @@ export default function Topic({ data, updateData }) {
 					{(props) => (
 						<div>
 							<div className="header-rand">{SearchBar({ ...props.searchProps })}</div>
-							<div className="container  container-custom" style={{ overflowAnchor: "none" }}>
+							<div className="container  container-custom" style={{ overflowAnchor: "none", paddingBottom:"2rem" }}>
 								<Fade duration={600}>
-									<BootstrapTable {...props.baseProps} selectRow={selectRow} sort={sortMode} classes={dark ? "dark-table" : ""} />
+									<BootstrapTable {...props.baseProps} selectRow={selectRow} sort={sortMode} className="setTable" classes={dark ? "dark-table" : ""} />
 								</Fade>
 							</div>
 						</div>

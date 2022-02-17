@@ -7,6 +7,8 @@ import Col from "react-bootstrap/Col";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../../App";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 import "./topicCard.css";
 
@@ -171,6 +173,16 @@ export default function TopicCard({ questionData }) {
           {topicCard}
         </div>
       </div>
+      <div className="Footer">
+      <div className="centerFooter">
+         <a href="https://github.com/shawakchoudhary/"><i class="fab fa-github fa-2x"></i></a>
+         <a href="https://www.instagram.com/iamshawakchoudhary/"><i class="fab fa-instagram fa-2x"></i></a>
+         <a href="https://github.com/shawakchoudhary/450-DSA"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+         </div>
+         <div className="footerText">
+         <h3>Copy Rights 2021 &copy; MrShawakChoudhary</h3>
+         </div>
     </>
   );
 }
