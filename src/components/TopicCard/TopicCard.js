@@ -175,7 +175,7 @@ export default function TopicCard({ questionData }) {
       <div className="centerFooter">
          <a href="https://github.com/shawakchoudhary/"><i class="fab fa-github fa-2x"></i></a>
          <a href="https://www.instagram.com/iamshawakchoudhary/"><i class="fab fa-instagram fa-2x"></i></a>
-         <a href="https://github.com/shawakchoudhary/450-DSA"><i class="fab fa-linkedin fa-2x"></i></a>
+         <a href="https://www.linkedin.com/in/shawak-choudhary-8a42a11b7/"><i class="fab fa-linkedin fa-2x"></i></a>
         </div>
          </div>
          <div className="footerText">
