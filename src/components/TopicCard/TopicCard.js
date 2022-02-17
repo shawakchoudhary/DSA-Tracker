@@ -7,8 +7,6 @@ import Col from "react-bootstrap/Col";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../../App";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 import "./topicCard.css";
 
