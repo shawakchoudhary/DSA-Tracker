@@ -144,7 +144,7 @@ export default function TopicCard({ questionData }) {
             Next Tech Interview
       </h3>
 
-      <h4 className="text-center mb-4">
+      <h4 className=" app-heading4 text-center mb-4">
         {totalSolved
           ? `Total Questions Solved : ${totalSolved} (${(
               (totalSolved / totalQuestions) *
@@ -167,7 +167,7 @@ export default function TopicCard({ questionData }) {
         </p>
       </h4>
       <div className="container container-custom">
-        <div className="row row-cols-1 row-cols-md-3 mt-3 grids">
+        <div className="row row-cols-1 row-cols-md-3 mt-3 row-cols-sm-1 grids">
           {topicCard}
         </div>
       </div>

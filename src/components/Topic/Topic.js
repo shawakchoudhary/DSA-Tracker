@@ -15,6 +15,7 @@ import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
 import "./Topic.css";
 import { ThemeContext } from "../../App";
 import Button from "react-bootstrap/Button";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Topic({ data, updateData }) {
 	/*
@@ -53,7 +54,7 @@ export default function Topic({ data, updateData }) {
 								href={question.URL}
 								target="_blank"
 								rel="noopener noreferrer"
-								style={{ fontWeight: "600", fontSize: "20px" }}
+								style={{ fontWeight: "600", fontSize: "23px", color:"aliceblue", textDecoration:"none" }}
 								className="question-link"
 							>
 								{question.Problem}
@@ -64,12 +65,12 @@ export default function Topic({ data, updateData }) {
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
-									width="16"
-									height="16"
+									width="24"
+									height="24"
 									fill="currentColor"
 									class={question.Notes && question.Notes.length !== 0 ? "bi bi-sticky-fill" : "bi bi-sticky"}
 									viewBox="0 0 16 16"
-									style={{ float: "right", color: "green", cursor: "pointer" }}
+									style={{ float: "right", color: "lightGreen", cursor: "pointer" }}
 									onClick={() => shownotes(index)}
 								>
 									{question.Notes && question.Notes.length !== 0 ? (
@@ -119,25 +120,22 @@ export default function Topic({ data, updateData }) {
 						</InputGroup.Append>
 						<FormControl
 							className="text-center search-input-container"
-							placeholder="Search Question.. 🔍"
+							placeholder="Search Question.. "
 							aria-label="Search Question"
 							aria-describedby="basic-addon2"
 							onChange={handleChange}
-							style={{ fontSize: "18px", fontWeight: "600" }}
+							style={{ color:"#fff", fontSize: "18px", fontWeight: "600" ,background:"#27ae6001"}}
 						/>
 						<InputGroup.Prepend>
 							<Badge
 								variant="success"
-								style={{ borderTopLeftRadius: "0px", borderBottomLeftRadius: "0px", background: "rgb(200, 230, 201)" }}
+								style={{ borderTopLeftRadius: "0px", borderBottomLeftRadius: "0px"}}
 							>
-								<p className="completed-questions" style={{ color: "black", padding: "8px" }}>
+								<p className="completed-questions" style={{ color: "aliceblue", padding: "8px" }}>
 									<span style={{ fontWeight: "bold" }}>
 										{data.doneQuestions}/{data.questions.length}
 									</span>{" "}
-									Done{" "}
-									<span className="emojiFix" role="img" aria-label="checker">
-										&#9989;
-									</span>
+									Done
 								</p>
 							</Badge>
 						</InputGroup.Prepend>
@@ -151,8 +149,8 @@ export default function Topic({ data, updateData }) {
 		{
 			dataField: "id",
 			text: "Q-Id",
-			headerStyle: { width: "80px", fontSize: "20px", textAlign: "center" },
-			style: { fontSize: "20px", cursor: "pointer", textAlign: "center" },
+			headerStyle: { width: "80px", fontSize: "20px", textAlign: "center", color :"aliceblue" },
+			style: { fontSize: "20px", cursor: "pointer", textAlign: "center", color :"aliceblue" },
 			events: {
 				onClick: (e, column, columnIndex, row, rowIndex) => {
 					handleSelect(row, !row._is_selected);
@@ -162,26 +160,26 @@ export default function Topic({ data, updateData }) {
 		{
 			dataField: "question",
 			text: "Questions",
-			headerStyle: { fontSize: "20px", textAlign: "center" },
+			headerStyle: { fontSize: "23px", textAlign: "center" , color :"aliceblue"},
 		},
 		{
 			dataField: "_is_selected",
 			text: "Is Selected",
-			headerStyle: { fontSize: "20px" },
+			headerStyle: { fontSize: "23px" },
 			hidden: true,
 			sort: true,
 		},
 		{
 			dataField: "_search_text",
 			text: "Search Text",
-			headerStyle: { fontSize: "20px" },
+			headerStyle: { fontSize: "23px" ,color :"aliceblue"},
 			hidden: true,
 		},
 	];
-	const rowStyle = { fontSize: "20px" };
+	const rowStyle = { fontSize: "23px" };
 	const selectRow = {
 		mode: "checkbox",
-		style: { background: dark ? "#393E46" : "#c8e6c9", fontSize: "24px" },
+		style: { background:"#27ae6080", color:"#ffffff", fontSize: "24px" },
 		selected: select,
 		onSelect: handleSelect,
 		hideSelectAll: true,
@@ -229,7 +227,7 @@ export default function Topic({ data, updateData }) {
 			dir: isSelect ? "👇🏻" : "👆🏻",
 		};
 
-		const title = `${isSelect ? select.length + 1 : select.length - 1}/${data.questions.length} Done`;
+		const 	title = `${isSelect ? select.length + 1 : select.length - 1}/${data.questions.length} Done`;
 		const subTitle = `Question pushed ${dir} the table.`;
 
 		const Card = (
@@ -318,9 +316,17 @@ export default function Topic({ data, updateData }) {
 	}
 	return (
 		<>
-			<h3 className="text-center mb-4">
-				<Link to="/">Topics</Link>/{topicName}
+			<div className="heading">
+		
+			 <h3 className="topicHeading1 text-center mb-4">
+				<Link to="/">🡠</Link>
 			</h3>
+
+			<h3 className="topicHeading text-center mb-4">
+			{topicName}
+			</h3>
+
+			</div>
 
 			{data === undefined ? (
 				<div className="d-flex justify-content-center">
@@ -338,7 +344,7 @@ export default function Topic({ data, updateData }) {
 					{(props) => (
 						<div>
 							<div className="header-rand">{SearchBar({ ...props.searchProps })}</div>
-							<div className="container container-custom" style={{ overflowAnchor: "none" }}>
+							<div className="container  container-custom" style={{ overflowAnchor: "none" }}>
 								<Fade duration={600}>
 									<BootstrapTable {...props.baseProps} selectRow={selectRow} sort={sortMode} classes={dark ? "dark-table" : ""} />
 								</Fade>
@@ -369,9 +375,6 @@ function RandomButton({ data }) {
 			target="_blank"
 		>
 			Pick Random{" "}
-			<span role="img" aria-label="woman-juggling-emoji" className="emojiFix">
-				🤹🏻‍♀️
-			</span>
 		</Button>
 	);
 }

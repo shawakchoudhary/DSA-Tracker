@@ -6,11 +6,6 @@ import Spinner from "react-bootstrap/Spinner";
 import TopicCard from "./components/TopicCard/TopicCard";
 import Topic from "./components/Topic/Topic";
 import About from "./components/About/About";
-import { TravelerEffect, MosaicGroundEffect, OceanEffect,
-	RainEffect, SeaWaveEffect, SnowFallEffect, SnowFallSlowEffect,
-	SpacingEffect, CloudWaveEffect 
-  } from 'react-background-animation'
-import Footer from "./components/Footer/Footer";
 import ReactGA from "react-ga";
 import "./App.css";
 

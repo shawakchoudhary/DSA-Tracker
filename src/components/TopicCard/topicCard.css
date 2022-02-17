@@ -1,6 +1,5 @@
 .container-custom {
   height:  100vh;
-  width: max-content;
 }
 .container::-webkit-scrollbar {
   width: 5px; /* width of the entire scrollbar */
@@ -14,27 +13,35 @@
   border: 3px solid rgba(78, 78, 78, 0.452); /* creates padding around scroll thumb */
 }
 .inprogress-card {
-  background-color: white;
+  background: rgba(0,0,0,0.3);
   border-radius: 15px;
-  border: 2.5px solid rgb(123, 252, 173);
+  border: 2.5px solid rgb(100, 206, 140);
   height: 90%;
 }
 
 .app-heading2{
-    padding:  10rem 0 1rem 3rem;
-    font-size: 3rem;
+    padding:  9rem 0 1rem 3rem;
+    font-size: 4rem;
     font-weight: 100;
+    color: aliceblue;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
     
 }
 .app-heading3{
   padding:  0 0 3rem 3rem;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 600;
-  
+  color: aliceblue;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.app-heading4{
+  color: aliceblue;
 }
 
 .inprogress-card:hover{
-  background-color: rgb(183, 252, 209);
+  background-color: rgb(69, 131, 93);
   border-radius: 15px;
   border: 1px solid rgb(39, 39, 39);
   height: 90%;
@@ -43,30 +50,30 @@
   opacity: 0.9;
 }
 .topicName {
-  color: #333333;
+  color: aliceblue;
   font-size: 25px;
   font-weight: 700;
 }
 .totalQuestion {
-  color: #4f4f4f;
+  color: #9b9999;
   font-weight: 700;
 }
 .notstarted-card {
-  background-color: white;
+  background-color: rgba(0,0,0,0.3);
   border-radius: 15px;
   border: 2.5px solid #aad0f6;
   height: 90%;
 }
 
 .notstarted-card:hover {
-  background-color:#aad0f6;
+  background-color:#577797;
   border-radius: 15px;
   border: 1px solid rgb(39, 39, 39);
   height: 90%;
 }
 
 .percentDone {
-  color: #4f4f4f;
+  color: #9b9999;
 }
 
 .container-custom2 {
@@ -91,9 +98,9 @@
   transform: scale(1.05);
 }
 
-@media screen and (max-height: 650px) {
+@media screen and (max-height: 550px) {
   .container-custom {
-    height: 56vh;
+    height: auto;
   }
 }
 
