@@ -15,7 +15,6 @@ import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
 import "./Topic.css";
 import { ThemeContext } from "../../App";
 import Button from "react-bootstrap/Button";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Topic({ data, updateData }) {
 	/*
@@ -71,7 +70,7 @@ export default function Topic({ data, updateData }) {
 									class={question.Notes && question.Notes.length !== 0 ? "bi bi-sticky-fill" : "bi bi-sticky"}
 									viewBox="0 0 16 16"
 									style={{ float: "right", color: "lightGreen", cursor: "pointer" }}
-									onClick={() => shownotes(index)}
+									onClick={() => {shownotes(index)}}
 								>
 									{question.Notes && question.Notes.length !== 0 ? (
 										<path d="M2.5 1A1.5 1.5 0 0 0 1 2.5v11A1.5 1.5 0 0 0 2.5 15h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 15 8.586V2.5A1.5 1.5 0 0 0 13.5 1h-11zm6 8.5a1 1 0 0 1 1-1h4.396a.25.25 0 0 1 .177.427l-5.146 5.146a.25.25 0 0 1-.427-.177V9.5z" />
@@ -91,6 +90,7 @@ export default function Topic({ data, updateData }) {
 			setTopicName(data.topicName);
 			setSelected(doneQuestion);
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [data]);
 
 	//tooltip functions

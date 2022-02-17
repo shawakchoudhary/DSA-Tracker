@@ -43,7 +43,7 @@ function App() {
 				setDark(true);
 			}
 		}
-	}, []);
+	}, [dark]);
 
 	//to update progress in '/' route and also update DB
 	function updateData(key, topicData, topicPosition) {
