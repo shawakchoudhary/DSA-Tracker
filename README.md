@@ -5,12 +5,12 @@
 [![Website Badge](https://img.shields.io/badge/Visit-Now-green?style=for-the-badge&logo=vercel)](https://competent-shannon-c95c97.netlify.app/)
 
 ## Home Page UI 👀
-(https://user-images.githubusercontent.com/78065798/154807137-e4a3d624-a1d4-497a-89d1-fb67d777c17d.png)
+![](https://user-images.githubusercontent.com/78065798/154807137-e4a3d624-a1d4-497a-89d1-fb67d777c17d.png)
 
 ## Topic Page UI
 
 
-(https://user-images.githubusercontent.com/78065798/154807241-842e6e44-5b8c-47e5-afa1-8f6cea218cb2.png)
+![](https://user-images.githubusercontent.com/78065798/154807241-842e6e44-5b8c-47e5-afa1-8f6cea218cb2.png)
 
 
 
