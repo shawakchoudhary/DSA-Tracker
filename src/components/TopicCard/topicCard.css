@@ -24,9 +24,7 @@
     font-size: 4rem;
     font-weight: 100;
     color: aliceblue;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    
-    
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;    
 }
 .app-heading3{
   padding:  0 0 3rem 3rem;
@@ -36,9 +34,13 @@
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+
 .app-heading4{
   color: aliceblue;
+  padding: 25px 0 5px 0;
+  font: 200 1.9rem "Roboto";
 }
+
 
 .inprogress-card:hover{
   background-color: rgb(69, 131, 93);
@@ -104,7 +106,7 @@
   align-items: center;
   justify-content: center;
   color: aliceblue;
-  margin: 23rem 0rem 0rem 0rem;
+  margin: 7rem 0rem 0rem 0rem;
   padding: 3rem 2rem 1rem 2rem; 
 }
 
@@ -133,14 +135,63 @@
   text-align: center;
   color: aliceblue;
 }
-@media screen and (max-height: 550px) {
+
+@media screen and (max-height: 1000px) {
   .container-custom {
     height: auto;
   }
 }
 
-@media screen and (max-height: 750px) {
-  .container-custom {
-    height: 54vh;
+@media screen and (min-width: 500px) and (max-width: 1400px) {
+  .Footer{
+    margin: 10rem 0rem 0rem 0rem;
   }
+  
+  .app-heading2{
+    align-items: center;
+    text-align: center;
+    padding:  9rem 3rem 1rem 3rem;
+    font-size: 1.9rem;
+    font-weight: 100;
+    color: aliceblue;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;    
+}
+.footerText > h3{
+  text-align: center;
+  color: aliceblue;
+  font-size: 24px;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+  
+  .app-heading2{
+    align-items: center;
+    text-align: center;
+    padding:  9rem 3rem 1rem 3rem;
+  font-size: large;
+    color: aliceblue;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;    
+}
+.app-heading3{
+  display: flex;
+  text-align: center;
+  padding:  0 3rem 3rem 3rem;
+  font-size: 3rem;
+  font-weight: 600;
+  color: aliceblue;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.Footer{
+  margin: 5rem 0rem 0rem 0rem;
+}
+
+.footerText > h3{
+  text-align: center;
+  color: aliceblue;
+  font-size: 24px;
+}
+
 }

@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Badge from "react-bootstrap/Badge";
 import Row from "react-bootstrap/Row";
+import About from "../About/About";
 import Col from "react-bootstrap/Col";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
