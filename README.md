@@ -1,5 +1,5 @@
 
-# DSA Questions Site 🚀
+# DSA Tracker 🚀
 
 [![React Badge](http://img.shields.io/badge/Powered%20By-React-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
 [![Website Badge](https://img.shields.io/badge/Visit-Now-green?style=for-the-badge&logo=vercel)](https://competent-shannon-c95c97.netlify.app/)
@@ -20,7 +20,7 @@
 - **Mobile first design ✌🏻**
 - **Clean UI ⚡**
 
-#### DSA-450 is a react based website which contain important questions for Data Structures and Algorithms. This project is very helpful for student as it gives motivation to improve Coding skills and also track your progress.
+#### DSA Tracker is a react based website which contain important questions for Data Structures and Algorithms. This project is very helpful for student as it gives motivation to improve Coding skills and also track your progress.
 
 
 ## Dependencies 
